@@ -5,7 +5,7 @@ public class Main {
     }
 
     // Class 0
-    public class Student {
+    class Student {
         private int id;
         private String major;
         private String name;
@@ -59,7 +59,7 @@ public class Main {
 
     }
     // Class 1
-    public class Cellphone {
+    class Cellphone {
         private String material;
         private int width;
         private int weight;
@@ -92,7 +92,7 @@ public class Main {
         }
     }
     // Class 2
-    public class Restaurant {
+    class Restaurant {
         private String name;
         private String address;
         private String cuisine;
@@ -125,7 +125,7 @@ public class Main {
         }
     }
     // Class 3
-    public class Kitchen {
+    class Kitchen {
         // Properties
         private boolean isOpen;
         private String styleOfFood;
@@ -161,7 +161,7 @@ public class Main {
         }
     }
     // Class 4
-    public class Car {
+    class Car {
         int miles;
         int seats;
         boolean hasRoof;
@@ -194,7 +194,7 @@ public class Main {
 
     }
     // Class 5
-    public class Laptop {
+    class Laptop {
         private String manufacturer;
         private String model;
         private String size;
@@ -227,7 +227,7 @@ public class Main {
         }
     }
     // Class 6
-    public class ShoppingMall {
+    class ShoppingMall {
         private String location;
         private int numberOfStores;
         private int totalArea;
@@ -261,7 +261,7 @@ public class Main {
         }
     }
     // Class 7
-    public class DentalClinic {
+    class DentalClinic {
 
         String address;
         String email;
@@ -296,7 +296,7 @@ public class Main {
         }
     }
     // Class 8
-    public class Hotel {
+    class Hotel {
         private String name;
         private String address;
         private int numOfRooms;
@@ -329,7 +329,7 @@ public class Main {
         }
     }
     // Class 9
-    public class School {
+    class School {
         private String name;
         private String campus;
         private int numOfStudents;
