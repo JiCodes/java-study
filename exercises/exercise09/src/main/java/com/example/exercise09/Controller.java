@@ -8,12 +8,14 @@ import javafx.scene.control.TextField;
 public class Controller {
     @FXML
     private TextField textField;
-    private String currentNumber = "";
+    private String currentOperand = "";
 
+    private String calculationType;
+    private String firstOperand = "";
 
     @FXML
     void btn0Clicked(ActionEvent event) {
-        if (!currentNumber.equals(""))
+        if (!currentOperand.equals(""))
             onNumberClicked("0");
     }
     @FXML
@@ -54,13 +56,60 @@ public class Controller {
     }
 
     public void onNumberClicked(String number) {
-        currentNumber += number;
+        currentOperand += number;
         updateTextField();
     }
 
     public void updateTextField() {
-        textField.setText(currentNumber);
+        textField.setText(currentOperand);
     }
 
 
+    @FXML
+    void division(ActionEvent event) {
+        setCalculation("/");
+    }
+    @FXML
+    void multiplication(ActionEvent event) {
+        setCalculation("*");
+    }
+    @FXML
+    void subtraction(ActionEvent event) {
+        setCalculation("-");
+    }
+    @FXML
+    void addition(ActionEvent event) {
+        setCalculation("+");
+    }
+
+    private void setCalculation(String calculationType) {
+        this.calculationType = calculationType;
+        firstOperand = currentOperand;
+        currentOperand = "";
+    }
+
+    @FXML
+    public void calculate(ActionEvent event) {
+        int firstOperandInt = Integer.parseInt(firstOperand);
+        int secondOperandInt = Integer.parseInt(currentOperand);
+
+        switch (calculationType) {
+            case "+" -> displayResult(firstOperandInt + secondOperandInt);
+            case "-" -> displayResult(firstOperandInt - secondOperandInt);
+            case "/" -> displayResult((float)firstOperandInt / (float)secondOperandInt);
+            case "*" -> displayResult(firstOperandInt * secondOperandInt);
+        }
+    }
+
+    private void displayResult(double result) {
+        textField.setText(String.valueOf(result));
+//        firstOperand = String.valueOf(result);
+
+    }
+
+    @FXML
+    void clearTextField(ActionEvent event) {
+        currentOperand = "";
+        textField.setText("");
+    }
 }
