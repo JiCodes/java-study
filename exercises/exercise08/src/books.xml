@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BookShelf>
+    <Book>
+        <title>Harry Potter and Seven Dwarfs</title>
+        <publishedYear>1992</publishedYear>
+        <numberOfPages>233</numberOfPages>
+        <authors>
+            <author>R. K. Narayan</author>
+            <author>Raja Brown</author>
+            <author>Salman Coelho</author>
+        </authors>
+    </Book>
+    <Book>
+        <title>The Sam Altman Code</title>
+        <publishedYear>1918</publishedYear>
+        <numberOfPages>123</numberOfPages>
+        <authors>
+            <author>R. K. Narayan</author>
+            <author>Raja Brown</author>
+            <author>Salman Coelho</author>
+        </authors>
+    </Book>
+    <Book>
+        <title>The Salesman</title>
+        <publishedYear>1984</publishedYear>
+        <numberOfPages>321</numberOfPages>
+        <authors>
+            <author>R. K. Narayan</author>
+            <author>Raja Brown</author>
+            <author>Salman Coelho</author>
+        </authors>
+    </Book>
+</BookShelf>

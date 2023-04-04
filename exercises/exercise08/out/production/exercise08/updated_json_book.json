@@ -1,0 +1,45 @@
+{
+  "BookShelf": {
+    "Book": [
+      {
+        "title": "Harry Potter and Seven Dwarfs",
+        "publishedYear": 1992,
+        "numberOfPages": 233,
+        "authors": [
+          "R. K. Narayan",
+          "Raja Brown",
+          "Salman Coelho"
+        ]
+      },
+      {
+        "title": "The Sam Altman Code",
+        "publishedYear": 1918,
+        "numberOfPages": 123,
+        "authors": [
+          "R. K. Narayan",
+          "Raja Brown",
+          "Salman Coelho"
+        ]
+      },
+      {
+        "title": "The Salesman",
+        "publishedYear": 1984,
+        "numberOfPages": 321,
+        "authors": [
+          "R. K. Narayan",
+          "Raja Brown",
+          "Salman Coelho"
+        ]
+      },
+      {
+        "title": "How to master Data Structure",
+        "publishedYear": 2023,
+        "numberOfPages": 888,
+        "authors": [
+          "Ayush Joshi",
+          "Taral Oza"
+        ]
+      }
+    ]
+  }
+}
