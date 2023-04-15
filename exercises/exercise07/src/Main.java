@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.List;
 
 public class Main {
 
@@ -24,6 +25,11 @@ public class Main {
         ElementExchange.exchange(items, 1, 3);
         System.out.println("Array after exchange: " + Arrays.toString(items));
 
-
+        // Test Search Max
+        List<Integer> list = Arrays.asList(1, 2, 3, 4, 5);
+        int begin = 0;
+        int end = 5;
+        Integer max = SearchMax.search(list, begin, end);
+        System.out.println("Max element in the range [" + begin + ", " + end + ") is " + max);
     }
 }
