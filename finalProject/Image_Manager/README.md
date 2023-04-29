@@ -82,7 +82,8 @@ This project follows the Model-View-Controller (MVC) design pattern, in which th
 
 # Usage
 
-To use the application, follow these steps:
+To use the application, follow these steps:<br>
+`* Background image and button style credits to Google Photos.`
 
 1. Launch the application by running the `Application.java` class.
    ![Run App Image](src/main/resources/com/example/imagemanager/images/01.png "Application UI")
